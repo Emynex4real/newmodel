@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "course-recommendation-system"
+version = "1.0.0"
+description = "A machine learning-based course recommendation system"
+authors = [{name = "Course Recommendation Team"}]
+dependencies = [
+    "streamlit>=1.28.1",
+    "pandas>=2.0.3",
+    "scikit-learn>=1.3.0",
+    "numpy>=1.24.3",
+    "nltk>=3.8.1",
+    "seaborn>=0.12.2",
+    "xgboost>=1.7.6"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0"
+]
