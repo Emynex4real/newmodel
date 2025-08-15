@@ -60,7 +60,8 @@ def load_data():
         
         return df
     except FileNotFoundError:
-        st.error("Dataset file not found. Please upload 'course_interests_refined.csv'")
+        st.error("Dataset file not found. Please make sure 'course_interests_refined.csv' is in your app directory.")
+        st.info("You can upload the dataset file to your Streamlit app or check the file path.")
         return None
 
 @st.cache_resource
